@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    min-height: 100vh;
+    color: #333333;
+
+    & header {
+        padding: 2rem 1rem 1rem 1rem;
+        box-shadow: 7px 2px 13px -8px rgba(0,0,0,0.64);
+        -webkit-box-shadow: 7px 2px 13px -8px rgba(0,0,0,0.64);
+        -moz-box-shadow: 7px 2px 13px -8px rgba(0,0,0,0.64);
+        position: fixed;
+
+        & section {
+            & ul {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+
+                & li {
+                    list-style-type: none;
+                    margin-bottom: 1rem;
+                    padding: .25rem;
+                    cursor: pointer;
+                    transition: 100ms ease-in-out;
+
+                    & .link {
+                        text-decoration: none;
+                        color: #333333;
+                    }
+                }
+
+                & .link:hover {
+                    transition: 100ms ease-in-out;
+                    color: #4a6741;
+                }
+            }
+        }
+    }
+
+    & main {
+        padding: 1.5rem 2rem 1rem 2rem;
+        min-width: calc(100% - 135px);
+        position: absolute;
+        left: 135px;
+    
+        & #title  {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+            & img {
+                padding-right: 2rem;
+                border-radius: 48% 52% 43% 57% / 50% 32% 68% 50%;
+                width: 175px;
+            }
+
+            & .pTitle1 {
+                font-size: 2.75rem;
+                text-align: center;
+                font-weight: 600;
+            }
+
+            & span {
+                color: 	#4a6741;
+            }
+        }
+
+        & #about {
+            margin-top: 4rem;
+
+            & .pTitle2 {
+                color: #4a6741;
+                font-weight: 600;
+                font-size: 1.25rem;
+                text-align: center;
+            }
+
+            & div {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+    
+                & .psubTitle2 {
+                    margin: .75rem 3rem;
+                    text-align: left;
+                    line-height: 35px;
+                    max-width: 525px;
+                    padding: .5rem;
+                }
+
+                & img {
+                    max-width: 50px;
+                    max-height: 50px;
+                }
+            }
+        }
+    }
+}
+
+
+
