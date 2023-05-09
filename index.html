@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link rel="stylesheet" href="./styles/index.css">
 
-    <title>Full Stack Dev - Bruno Pontiz</title>
+    <title>Bruno Pontiz | Portfolio</title>
 </head>
 <body>
     <header>
         <section>
             <ul>
+                <li>Bruno Pontiz</li>
+                <li><a href="#title" class="link">Home</a></li>
                 <li><a class="link" href="#about">About me</a></li>
                 <li><a class="link" href="#portfolio">Portfolio</a></li>
                 <li><a class="link" href="#contact">Contact</a></li>
@@ -22,12 +26,12 @@
     </header>
 
     <main>
-        <section id="title">
+        <section id="title" class="animate__animated animate__fadeInDown">
             <img src="./multimedia/FotoPropia.png" alt="me">
             <p class="pTitle1">Hi! I am <span>Bruno</span>, Full Stack Dev</p>
         </section>
 
-        <section id="about">
+        <section id="about" class="animate__animated animate__fadeInDown">
             <p class="pTitle2">About me</p>
             <div>
                 <img src="./multimedia/compu.png" alt="pc">
@@ -35,10 +39,38 @@
                 <img src="./multimedia/arbol2.png" alt="tree">
                 <p class="psubTitle2">I come from a place with stunning and beautiful landscapes where I was born and decided to study engineering.<br />I see myself like a passionate person about technology. I get motivated by this growing IT world and one of my career objectives is to contribute to it.  I build web applications focusing on both front and back end sides.</p>                
             </div>
-
         </section>
 
-        <section id="portfolio">
+        <section id="portfolio" class="animate__animated animate__fadeIn">
+            <p class="pTitle3">Portfolio</p>
+            <div>
+                <div class="imageCard"><a href="https://github.com/bpontiz/WarsenBackend-BrunoPontiz.git"><img src="./multimedia/warsen.png" class="imageProject" alt="project3"></a></div>
+                <div class="infoCard">
+                    <p id="eltestarudo" class="projectTitle">Full stack project</p>
+                    <p class="projectSubtitle">Warsen e-commerce is a full stack application with both front and back end sides. The backend itself is a RESTFUL API, since it was built as a data-on-wire model. The frontend server can and must communicate with backend server to correctly deploy the final product. All products, users, carts, and orders modules are storaged in Mongo Atlas Database service. Built with <span class="tools">React Js, Mongo Atlas Database, Mongoose as ORM, Node Js, Express, Factory, CORS, Axios, Dotenv, Nodemailer (with Google), sensitive data encryptation, and Mocha testing.</span></p>
+                </div>
+            </div>
+            <div>
+                <div class="imageCard"><a href="https://skai-consultoring.vercel.app/"><img src="./multimedia/skai.png" class="imageProject" alt="project3"></a></div>
+                <div class="infoCard">
+                    <p id="eltestarudo" class="projectTitle">React js project</p>
+                    <p class="projectSubtitle">SKAI e-commerce was developed for consultoring and advisory of different topics related to the field of medicine. Services are not provided by people, but artificial intelligences with hardware and electronics incorporated. I created this project because of my interest about technology and medicine topics. Built with <span class="tools">React Js, react router dom, Google's Firestore database service (Firebase), functional based hooks including context, and styled components.</span>The application is hosted by Vercel platform.</p>
+                </div>
+            </div>
+            <div>
+                <div class="imageCard"><a href="https://bpontiz.github.io/BankKreat/"><img src="./multimedia/bankKreat.png" class="imageProject" alt="project2"></a></div>
+                <div class="infoCard">
+                    <p id="eltestarudo" class="projectTitle">Javascript project</p>
+                    <p class="projectSubtitle">Bank Kreat is an interest calculator with sign up functionality and validation modules. To develop this project, I considered my dad's idea of having an investment simulation app of fixed-term bank deposits. It was created with <span class="tools">HTML, CSS,  Javascript with event handlers, DOM manipulation, JSON, and asynchronous functions.</span></p>
+                </div>
+            </div>
+            <div>
+                <div class="imageCard"><a href="https://bpontiz.github.io/ElTestarudo/index.html"><img src="./multimedia/elTestarudo.png" class="imageProject" alt="project1"></a></div>
+                <div class="infoCard">
+                    <p id="eltestarudo" class="projectTitle">Web development project</p>
+                    <p class="projectSubtitle">El Testarudo was created as a website of multiple pages for a recognized local vineyard. It includes <span class="tools">HTML, CSS, SASS, and Bootstrap.</span> Website is hosted by GitHub Pages.</p>
+                </div>
+            </div>
         </section>
 
         <section id="contact">

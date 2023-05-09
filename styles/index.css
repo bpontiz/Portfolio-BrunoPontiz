@@ -56,6 +56,7 @@ body {
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            transition: 200ms;
             
             & img {
                 padding-right: 2rem;
@@ -80,7 +81,7 @@ body {
             & .pTitle2 {
                 color: #4a6741;
                 font-weight: 600;
-                font-size: 1.25rem;
+                font-size: 1.5rem;
                 text-align: center;
             }
 
@@ -101,6 +102,81 @@ body {
                 & img {
                     max-width: 50px;
                     max-height: 50px;
+                }
+            }
+        }
+
+        & #portfolio {
+            margin: 4rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+
+            & .pTitle3 {
+                color: #4a6741;
+                font-weight: 600;
+                font-size: 1.5rem;
+                margin: .25rem 3rem;
+            }
+
+            & div {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 1rem;
+
+                & .imageCard {
+                    box-shadow: -1px -1px 16px 2px rgba(0,0,0,0.10);
+                    -webkit-box-shadow: -1px -1px 16px 2px rgba(0,0,0,0.10);
+                    -moz-box-shadow: -1px -1px 16px 2px rgba(0,0,0,0.10);
+                    border-radius: 10px;
+                    height: 300px;
+
+                    & .imageProject {
+                        max-height: 300px;
+                        max-width: 500px;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transition: 400ms ease-in-out;
+                        transform: scale(1);
+                    }
+
+                    & .imageProject:hover {
+                        transition: 400ms ease-in-out;
+                        transform: scale(1.1);
+                        box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.75);
+                    }
+                }
+
+                & .infoCard {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    max-width: 500px;
+
+                    & .projectTitle {
+                        font-size: 1.1rem;
+                        text-align: left;
+                        width: 100%;
+                        font-weight: 600;
+                    }
+
+                    & .projectSubtitle {
+                        line-height: 35px;
+                        margin: 1rem 1.5rem 0 1.5rem;
+                        width: 100%;
+                        font-size: .8rem;
+
+                        & .tools {
+                            color: #77a769;
+                        }
+                    }
                 }
             }
         }
