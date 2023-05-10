@@ -14,16 +14,15 @@
     <title>Bruno Pontiz | Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="headerContainer">
         <section>
-            <ul>
-                <li>Bruno Pontiz</li>
+            <ul class="ulHeader">
+                <li class="link">Bruno Pontiz</li>
                 <li><a href="#title" class="link">Home</a></li>
                 <li><a class="link" href="#about">About me</a></li>
                 <li><a class="link" href="#portfolio">Portfolio</a></li>
                 <li><a class="link" href="#contact">Contact</a></li>
             </ul>
-            <p><a href="https://www.flaticon.es/iconos-gratis/ordenador-portatil" title="icons">Images</a></p>
         </section>
     </header>
 
@@ -32,13 +31,15 @@
             <img src="./multimedia/FotoPropia.png" alt="me">
             <p class="pTitle1">Hi! I am <span>Bruno</span>, Full Stack Dev</p>
         </section>
-
+        
         <section id="about" class="animate__animated animate__fadeInDown">
             <p class="pTitle2">About me</p>
             <div>
-                <img src="./multimedia/compu.png" alt="pc">
-                <img src="./multimedia/montana2.png" alt="mountain">
-                <img src="./multimedia/arbol2.png" alt="tree">
+                <div class="aboutMeIcons">
+                    <img src="./multimedia/compu.png" alt="pc">
+                    <img src="./multimedia/montana2.png" alt="mountain">
+                    <img src="./multimedia/arbol2.png" alt="tree">
+                </div>
                 <p class="psubTitle2">I come from a place with stunning and beautiful landscapes where I was born and decided to study engineering.<br />I see myself like a passionate person about technology. I get motivated by this growing IT world and one of my career objectives is to contribute to it.  I build web applications focusing on both front and back end sides.</p>                
             </div>
         </section>
@@ -91,6 +92,6 @@
     <script>
         AOS.init();
     </script>
-    <script src="./scripts/index.js"></script>
+    <script type="/module" src="./scripts/index.js"></script>
 </body>
 </html>
