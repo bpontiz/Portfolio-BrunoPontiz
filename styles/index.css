@@ -176,8 +176,67 @@ body {
                         & .tools {
                             color: #77a769;
                         }
+
+                        & .gitHubLink {
+                            color: #333;
+                        }
                     }
                 }
+            }
+        }
+
+        & #contact {
+            margin: 4rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+
+            & .pTitle4 {
+                color: #4a6741;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+
+            & .divContact {
+                max-width: 100%;
+
+                & .ulContact {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1rem;  
+                    width: 100%;
+
+                    & .liContact {
+                        list-style-type: none;
+                        margin: 0 1.5rem;
+
+                        & .contactLink {
+                            text-decoration: none;
+
+                            & .imgContact {
+                                max-width: 35px;
+                                transition: 200ms ease-in-out;
+                                transform: scale(1);
+                            }
+
+                            & .imgContact:hover {
+                                transition: 200ms ease-in-out;
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .pSubTitle4 {
+                color: #333;
+                font-size: 20px;
+                font-weight: 600;
+                margin-top: 2rem;
             }
         }
     }
