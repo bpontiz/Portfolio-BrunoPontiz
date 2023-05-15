@@ -292,7 +292,7 @@
         color: white;
     }
 
-    body.dark main #title .pTitle1 span, body.dark main #about .pTitle2, body.dark main #portfolio .pTitle3, body.dark main #contact .pTitle4, body.dark main #portfolio .infoCard .projectSubtitle .tools {
+    body.dark main #title .pTitle1 span, body.dark main #about .pTitle2, body.dark main #portfolio .pTitle3, body.dark main #contact .pTitle4, body.dark main #portfolio .infoCard .projectSubtitle .tools, body.dark header section .ulHeader li .link:hover, body.dark header section .ulHeader .link:hover {
         color: #31AFD4;
     }
 }
@@ -605,7 +605,7 @@
         color: white;
     }
 
-    body.dark main #title .pTitle1 span, body.dark main #about .pTitle2, body.dark main #portfolio .pTitle3, body.dark main #contact .pTitle4, body.dark main #portfolio .infoCard .projectSubtitle .tools {
+    body.dark main #title .pTitle1 span, body.dark main #about .pTitle2, body.dark main #portfolio .pTitle3, body.dark main #contact .pTitle4, body.dark main #portfolio .infoCard .projectSubtitle .tools, body.dark header section .ulHeader li .link:hover, body.dark header section .ulHeader .link:hover {
         color: #31AFD4;
     }
 }
